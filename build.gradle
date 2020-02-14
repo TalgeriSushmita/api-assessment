@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'JPMC'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'io.rest-assured:rest-assured:4.1.2'
+    testCompile group: 'org.hamcrest', name: 'java-hamcrest', version: '2.0.0.0'
+    testCompile 'io.rest-assured:json-schema-validator:4.1.2' // schema validation
+}
